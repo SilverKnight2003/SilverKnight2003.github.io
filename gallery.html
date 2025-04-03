@@ -31,45 +31,6 @@
         margin-left: 100px;
         margin-right: 100px;
     }
-    .sorbox{
-        margin: 10px;
-    }
-    
-    .website-footer {
-            background-color: #eae6e6;
-            padding: 50px;
-            margin-left: 20px;
-        margin-right: 20px;
-        }
-        .website-footer .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .website-footer .summary {
-            width: 33%;
-            color: #000000;
-            font-weight: bold;
-        }
-        .footer-links {
-            list-style: none;
-            margin-left: auto;
-            columns: 2;
-            gap: 50px;
-        }
-        .footer-item {
-            margin-bottom: 10px;
-        }
-        .footer-link {
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .website-footer .copyright {
-            width: 100%;
-            color: #000000;
-            font-weight: bold;            
-            text-align: right;}
-    
     nav a {
         color: #000000;
         text-decoration: none;
@@ -93,7 +54,78 @@
         font-size: 20px;
         
     }
-        </style>
+    .sorbox{
+        margin: 10px;
+    }
+    .Photos1 {
+        display: flex;
+        width: 230px;
+        height: 230px;
+        margin-left: 48px;
+    }
+    .Photos1 img {
+        width: 300px;
+        height: 300px;
+        gap: 33px;
+    }
+    .row1 {
+        gap: 170px;
+        margin-bottom: 120px;
+    }
+    
+    .Photos2 {
+        display: flex;
+        width: 230px;
+        height: 230px;
+        margin-left: 48px;
+    }
+    .Photos2 img {
+        width: 580px;
+        height: 340px;
+        gap: 33px;
+    }
+    .row2 {
+        gap: 80px;
+        margin-bottom: 170px;
+    }
+    .website-footer {
+        background-color: #eae6e6;
+        padding: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .website-footer .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .website-footer .summary {
+        width: 33%;
+        color: #000000;
+        font-weight: bold;
+    }
+    .footer-links {
+        list-style: none;
+        margin-left: auto;
+        columns: 2;
+        gap: 50px;
+    }
+    .footer-item {
+        margin-bottom: 10px;
+    }
+    .footer-link {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .website-footer .copyright {
+        width: 100%;
+        color: #000000;
+        font-weight: bold;            
+        text-align: right;
+    }
+    
+    
+</style>
 <body>
     <header>
         <h1>My Portfolio</h1>
@@ -104,13 +136,41 @@
         </nav>
     </header>
     
-    <div class="contain">
-
+    <div class="contain"> 
+        
+        
         <h1 class="Title"> My Artworks</h1>
-
-        <div class="sorbox">
+        
+        <div class="row1 Photos1">
             
+            <div class="card-image">
+                <img src="images/Art1.png" alt="">
+            </div>                        
+            
+            <div class="card-image">
+                <img src="Images/Art4.png" alt="">
+            </div>                        
+            
+            <div class="card-image">
+                <img src="Images/Art5.png" alt="">
+            </div>
+            
+        </div>
+        <div class="row2 Photos2">
+            
+            <div class="card-image">
+                <img src="images/Art2.png" alt="">
+            </div>                        
+            
+            <div class="card-image">
+                <img src="Images/Art3.png" alt="">
+            </div>                        
+            
+        </div>
     </div>
+    
+    
+    
     <footer class="website-footer">
         <div class="container">
             <p class="summary">
@@ -127,11 +187,11 @@
                     <a href="#" class="footer-link">About</a>
                 </li>
                 <li class="footer-item">
-                    <a href="#" class="footer-link">Shop</a>
+                    <a href="#" class="footer-link">Share</a>
                 </li>
             </ul>
             <p class="copyright">
-                &copy;Malta Travels
+                &copy;Emman Gauci
             </p>
         </div>
     </footer>
