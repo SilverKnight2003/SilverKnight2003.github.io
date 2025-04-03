@@ -31,45 +31,6 @@
         margin-left: 100px;
         margin-right: 100px;
     }
-    .sorbox{
-        margin: 10px;
-    }
-    
-    .website-footer {
-            background-color: #eae6e6;
-            padding: 50px;
-            margin-left: 20px;
-        margin-right: 20px;
-        }
-        .website-footer .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .website-footer .summary {
-            width: 33%;
-            color: #000000;
-            font-weight: bold;
-        }
-        .footer-links {
-            list-style: none;
-            margin-left: auto;
-            columns: 2;
-            gap: 50px;
-        }
-        .footer-item {
-            margin-bottom: 10px;
-        }
-        .footer-link {
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .website-footer .copyright {
-            width: 100%;
-            color: #000000;
-            font-weight: bold;            
-            text-align: right;}
-    
     nav a {
         color: #000000;
         text-decoration: none;
@@ -93,48 +54,166 @@
         font-size: 20px;
         
     }
-        </style>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    .sorbox{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
     
-    <div class="contain">
-
-        <h1 class="Title"> Contact here</h1>
-
-        <div class="sorbox">
+    .website-form {
+        margin-bottom: 100px;
+    }
+    
+    .website-footer {
+        background-color: #eae6e6;
+        padding: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .website-footer .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .website-footer .summary {
+        width: 33%;
+        color: #000000;
+        font-weight: bold;
+    }
+    .footer-links {
+        list-style: none;
+        margin-left: auto;
+        columns: 2;
+        gap: 50px;
+    }
+    .footer-item {
+        margin-bottom: 10px;
+    }
+    .footer-link {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .website-footer .copyright {
+        width: 100%;
+        color: #000000;
+        font-weight: bold;            
+        text-align: right;}
+        
+        
+        .form-element {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .form-element label {
+            width: 200px;
+        }
+        .form-element input,
+        .form-element select,
+        .form-element textarea {
+            font-family: Montserrat, Arial, sans-serif;
+            display:block;
+            flex: 1;
+            padding: 5px;
+            resize:none;
+        }
+        .form-element button {
+            font-family:Montserrat, Arial, sans-serif;
+            display: block;
+            margin-right: 10px;
+            width: 100px;
+            padding: 5px;
+        }
+    </style>
+    <body>
+        <header>
+            <h1>My Portfolio</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        
+        <div class="contain">
+            <h1 class="Title"> Contact here</h1>
             
-    </div>
-    <footer class="website-footer">
-        <div class="container">
-            <p class="summary">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio libero voluptate atque! Modi, voluptates. Eaque mollitia unde perspiciatis blanditiis obcaecati consequuntur hic ea, qui ut? Recusandae odit omnis laborum reiciendis!
-            </p>
-            <ul class="footer-links">
-                <li class="footer-item">
-                    <a href="#" class="footer-link">Home</a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" class="footer-link">Stories</a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" class="footer-link">About</a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" class="footer-link">Share</a>
-                </li>
-            </ul>
-            <p class="copyright">
-                &copy;Emman Gauci
-            </p>
+            <div class="sorbox">
+                <div class="container">
+                    
+                    <!-- Main website content-->
+                    <main class="main-content">
+                        <!--
+                        Contact forms need back-end processing to work,
+                        using languages like PHP or Node.js.
+                        
+                        It is NOT POSSIBLE to send a form through normal HTML,
+                        so in this example, we will use th email client instead.
+                        
+                        -->
+                        <form action="mailto:info@example.com" method="post" enctype="text/plain" class="content-narrow website-form">
+                            <h2>Share Your Adventure</h2>
+                            
+                            <div class="form-element">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" required placeholder="Micheal Vinci">
+                                
+                            </div>
+                            <div class="form-element">
+                                <label for="email">Email Address:</label>
+                                <input type="email" name="email" id="email" required placeholder="michealvinci@vinci.com">
+                            </div>
+                            <div class="form-element">
+                                <label for="subject">Subject:</label>
+                                <select name="subject" id="subject"> 
+                                    <option value="Artwork">Next artworks?</option>
+                                    <option value="Game Wars">Requesting a Game Wars battle suggestion</option>
+                                    <option value="Digital artwork">Requesting an digital artwork</option>
+                                </select>
+                            </div>
+                            <div class="form-element">
+                                <textarea name="message" id="message" row="10"></textarea>
+                            </div>
+                            
+                            
+                            
+                            <div class="form-element">
+                                
+                                <button type="submit">Send</button>
+                                <button type="reset">Reset</button>
+                                
+                            </div>
+                        </form>
+                    </main>
+                </div>
+                
+            </div>
         </div>
-    </footer>
-    
-</body>
-</html>
+        
+        <footer class="website-footer">
+            <div class="container">
+                <p class="summary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio libero voluptate atque! Modi, voluptates. Eaque mollitia unde perspiciatis blanditiis obcaecati consequuntur hic ea, qui ut? Recusandae odit omnis laborum reiciendis!
+                </p>
+                <ul class="footer-links">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Stories</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">About</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Share</a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    &copy;Emman Gauci
+                </p>
+            </div>
+        </footer>
+        
+    </body>
+    </html>
